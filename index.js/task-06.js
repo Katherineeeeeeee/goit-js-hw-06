@@ -1,4 +1,3 @@
-'use strict';
 
 const inputEl = document.querySelector('#validation-input');
 

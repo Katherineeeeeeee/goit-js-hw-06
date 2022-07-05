@@ -1,5 +1,3 @@
-"use strict";
-
 
 const categoriesEl = document.querySelectorAll('.item');
 
