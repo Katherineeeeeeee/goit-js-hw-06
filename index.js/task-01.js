@@ -7,6 +7,6 @@ categoriesEl.forEach((item) => {
 const categoryTitleEl = item.querySelector('h2');
 console.log('Category: ', categoryTitleEl.textContent);
 
-const n = item.querySelectorAll('ul >li');
-console.log('Elements: ', n.length)
+const amount = item.querySelectorAll('ul >li');
+console.log('Elements: ', amount.length)
 })
