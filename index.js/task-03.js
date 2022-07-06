@@ -21,7 +21,7 @@ const images = [
   //оформлення картинок
 
 const list = document.querySelector('ul');
-const el = images.map((image) => `<li class=item><img src=${image.url} alt=${image.alt} width=500></li>`);
+const el = images.map((image) => `<li class=item><img src=${image.url} alt=${image.alt} width=500></li>`).join('');
 
 list.insertAdjacentHTML('beforeend', el)
 
