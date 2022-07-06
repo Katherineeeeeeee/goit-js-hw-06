@@ -1,4 +1,3 @@
-
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -10,16 +9,25 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
+const listMap = ingredients.map((ingredient) => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("item");
 
-function render(item, arr) {
-  arr.forEach((el) => {
-    const li = document.createElement('li');
-    li.textContent = el;
+  return li;
+});
 
-    li.classList.add("item");
+list.append(...listMap);
 
-    item.append(li);
-  });
-}
+// function render(item, arr) {
+//   arr.forEach((el) => {
+//     const li = document.createElement('li');
+//     li.textContent = el;
 
-render(list, ingredients);
+//     li.classList.add("item");
+
+//     item.append(li);
+//   });
+// }
+
+// render(list, ingredients);

@@ -11,10 +11,14 @@ function onFormSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" ||  password.value === "") {
-    alert("всі поля повинні бути заповнені");
+    return alert("всі поля повинні бути заповнені");
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  console.log({
+    email: email.value,
+    password: password.value,
+  })
+  // (`Login: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 }
 
